@@ -24,3 +24,7 @@ int __libc_start_main(
 	exit(main(argc, argv, envp));
 	return 0;
 }
+
+//bionic
+//
+weak_alias(__libc_start_main, __libc_init);
